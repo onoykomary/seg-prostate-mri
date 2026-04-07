@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "seg-mri-prostate"
+version = "0.1.0"
+description = "Whole prostate gland segmentation task"
+authors = ["onoykomary <onoykomary@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.11"
+
+torch = "2.5.1" 
+torchvision = "*"
+monai = "1.3.0"
+nibabel = "5.2.1"
+simpleitk = "2.3.1"
+numpy = "1.26.4"
+scipy = "1.11.4"
+scikit-image = "0.22.0"
+scikit-learn = "1.3.2"
+tqdm = "4.66.1"
+pandas = "2.1.4"
+matplotlib = "3.8.2"
+pytorch-lightning = "^2.6.0"
+mlflow = "^3.8.1"
+lightning = "^2.6.0"
+dotenv = "^0.9.9"
+transformers = "^5.1.0"
+itk = "^5.4.5"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.12.1"
+isort = "5.13.2"
+ipykernel = "^7.2.0"
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
